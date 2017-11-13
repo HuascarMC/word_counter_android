@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">word_counter_android</string>
+    <string name="input_sentence">Input sentence</string>
+    <string name="count">count</string>
 </resources>
