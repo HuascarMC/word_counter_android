@@ -1,6 +1,11 @@
 package com.example.huascar.word_counter_android;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -27,8 +32,22 @@ public class Count {
                 occurences.put(word, 1);
             }
         }
-       return occurences;
+        return occurences;
+    }
+
+    public HashMap orderByValue(HashMap hash) {
+        List<Integer> intList = new ArrayList<Integer>(hash.values());
+
+        Collections.sort(intList, new Comparator<Integer>() {
+
+            public int compare(Integer o1, Integer o2) {
+                // for descending order
+                return o1 - o2;
+            }
+        });
+        return hash;
     }
 }
+
 
 
