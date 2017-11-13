@@ -15,13 +15,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        this.editText = (TextView) findViewById(R.id.editText);
+        this.count = (Button) findViewById(R.id.button);
     }
 
-    protected void onClick(Button button) {
+    public void onClick(Button button) {
         Log.d("MainActivity", "onClick");
-    }
-
-    protected void count() {
-
     }
 }
