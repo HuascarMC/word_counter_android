@@ -22,6 +22,6 @@ public class TestCount {
     public void TestOccurrences() {
         HashMap<String, Integer> occurences = new HashMap<>();
         Count count = new Count();
-        assertEquals(null, count.numberOfOcurrences("it ot it"));
+        assertEquals(null, count.numberOfOcurrences("Hola amigo como estas amigo amigo"));
     }
 }
